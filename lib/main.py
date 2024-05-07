@@ -198,7 +198,10 @@ def enabled_handler(enabled: bool, nc: NextcloudApp) -> str:
         )
         nc.ui.resources.set_script("top_menu", "first_menu", "js/ui_example-main")
         nc.ui.top_menu.register("first_menu", "UI example", "img/app.svg")
-        nc.ui.files_dropdown_menu.register("test_menu", _("Test menu"), "/test_menu", mime="image/jpeg", icon="img/app-dark.svg")
+        nc.ui.files_dropdown_menu.register("test_menu", _("Test menu"), "/test_menu", mime="image/jpeg",
+                                           icon="img/app-dark.svg")
+        nc.ui.files_dropdown_menu.register_ex("test_redirect", _("Test redirect"), "/test_redirect", mime="image/jpeg",
+                                              icon="img/app-dark.svg")
         nc.occ_commands.register("ui_example:ping", "/occ_ping")
         nc.occ_commands.register(
             "ui_example:setup",
@@ -231,7 +234,6 @@ def enabled_handler(enabled: bool, nc: NextcloudApp) -> str:
             ],
         )
 
-
         if nc.srv_version["major"] >= 29:
             nc.ui.settings.register_form(SETTINGS_EXAMPLE)
     else:
@@ -241,6 +243,7 @@ def enabled_handler(enabled: bool, nc: NextcloudApp) -> str:
         nc.ui.resources.delete_script("top_menu", "first_menu", "js/ui_example-main")
         nc.ui.top_menu.unregister("first_menu")
         nc.ui.files_dropdown_menu.unregister("test_menu")
+        nc.ui.files_dropdown_menu.unregister("test_redirect")
         nc.occ_commands.unregister("ui_example:ping")
         nc.occ_commands.unregister("ui_example:setup")
         nc.occ_commands.unregister("ui_example:stream")
@@ -273,6 +276,22 @@ async def test_menu_handler(
     # Note: Only singular string translations are supported
     nc.notifications.create(_('Test notification subject'), _("Test notification message"))
     return responses.Response()
+
+class NodesPayload(BaseModel):
+    files: list[UiActionFileInfo]
+
+
+@APP.post("/test_redirect")
+async def test_menu_handler(
+    files: NodesPayload,
+    nc: Annotated[NextcloudApp, Depends(nc_app)],
+    accept_language: Annotated[str | None, Header()] = None
+):
+    print(f'Files: {files}')
+    print(f'Accept-Language: {accept_language}')
+    print(_("Test redirect"))
+    nc.notifications.create(_('Test redirect notification subject'), _("Test redirect notification message"))
+    return responses.JSONResponse(content={"redirect_handler": "first_menu/second_page"})
 
 
 class OccPayload(BaseModel):

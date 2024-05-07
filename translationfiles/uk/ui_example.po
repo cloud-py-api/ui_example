@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nextcloud 3.14159\n"
 "Report-Msgid-Bugs-To: translations\\@example.com\n"
-"POT-Creation-Date: 2024-02-20 15:37+0200\n"
-"PO-Revision-Date: 2024-02-20 18:37+0200\n"
+"POT-Creation-Date: 2024-05-02 19:38+0300\n"
+"PO-Revision-Date: 2024-05-02 19:44+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: uk_UA\n"
@@ -19,176 +19,187 @@ msgstr ""
 "n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 "X-Generator: Poedit 3.4\n"
 
-#: /home/andrey/coding/ui_example/lib/main.py:41
+#: /home/andrey/coding/ui_example/lib/main.py:38
+#: /home/andrey/coding/ui_example/lib/main.py:49
+#: /home/andrey/coding/ui_example/lib/main.py:57
 msgid "UI example"
 msgstr "Приклад UI"
 
-#: /home/andrey/coding/ui_example/lib/main.py:52
+#: /home/andrey/coding/ui_example/lib/main.py:69
 msgid "Example of declarative settings"
 msgstr "Приклад декларативних налаштувань"
 
-#: /home/andrey/coding/ui_example/lib/main.py:53
+#: /home/andrey/coding/ui_example/lib/main.py:70
 msgid "These fields are rendered dynamically from declarative schema"
 msgstr "Ці поля сгенеровані динамічно з декларавтиної схеми"
 
-#: /home/andrey/coding/ui_example/lib/main.py:58
-#: /home/andrey/coding/ui_example/lib/main.py:129
-#: /home/andrey/coding/ui_example/lib/main.py:132
-#: /home/andrey/coding/ui_example/lib/main.py:138
-#: /home/andrey/coding/ui_example/lib/main.py:141
+#: /home/andrey/coding/ui_example/lib/main.py:75
+#: /home/andrey/coding/ui_example/lib/main.py:146
+#: /home/andrey/coding/ui_example/lib/main.py:149
+#: /home/andrey/coding/ui_example/lib/main.py:155
+#: /home/andrey/coding/ui_example/lib/main.py:158
 msgid "Select some option setting"
 msgstr "Виберіть якусь опцію"
 
-#: /home/andrey/coding/ui_example/lib/main.py:61
+#: /home/andrey/coding/ui_example/lib/main.py:78
 msgid "Select some multiple options"
 msgstr "Виберіть якісь множинні опції"
 
-#: /home/andrey/coding/ui_example/lib/main.py:66
-#: /home/andrey/coding/ui_example/lib/main.py:70
+#: /home/andrey/coding/ui_example/lib/main.py:83
+#: /home/andrey/coding/ui_example/lib/main.py:87
 msgid "Choose init status check background job interval"
 msgstr "Виберіть інтервал фонової задачі перевірки статусу"
 
-#: /home/andrey/coding/ui_example/lib/main.py:67
+#: /home/andrey/coding/ui_example/lib/main.py:84
 msgid "How often ExApp should check for initialization status"
 msgstr "Як часто виконувати перевірку ініціалізації"
 
-#: /home/andrey/coding/ui_example/lib/main.py:72
+#: /home/andrey/coding/ui_example/lib/main.py:89
 msgid "Each 40 minutes"
 msgstr "Кожні 40 хвилин"
 
-#: /home/andrey/coding/ui_example/lib/main.py:73
+#: /home/andrey/coding/ui_example/lib/main.py:90
 msgid "Each 60 minutes"
 msgstr "Кожні 60 хвилин"
 
-#: /home/andrey/coding/ui_example/lib/main.py:74
+#: /home/andrey/coding/ui_example/lib/main.py:91
 msgid "Each 120 minutes"
 msgstr "Кожні 120 хвилин"
 
-#: /home/andrey/coding/ui_example/lib/main.py:75
+#: /home/andrey/coding/ui_example/lib/main.py:92
 msgid "Each day"
 msgstr "Кожен день"
 
-#: /home/andrey/coding/ui_example/lib/main.py:80
+#: /home/andrey/coding/ui_example/lib/main.py:97
 msgid "Default text field"
 msgstr "Звичайне текстове поле"
 
-#: /home/andrey/coding/ui_example/lib/main.py:81
+#: /home/andrey/coding/ui_example/lib/main.py:98
 msgid "Set some simple text setting"
 msgstr "Встановити простий текстовий параметр"
 
-#: /home/andrey/coding/ui_example/lib/main.py:84
+#: /home/andrey/coding/ui_example/lib/main.py:101
 msgid "Enter text setting"
 msgstr "Параметр email"
 
-#: /home/andrey/coding/ui_example/lib/main.py:88
+#: /home/andrey/coding/ui_example/lib/main.py:105
 msgid "Email field"
 msgstr "Поле email"
 
-#: /home/andrey/coding/ui_example/lib/main.py:89
+#: /home/andrey/coding/ui_example/lib/main.py:106
 msgid "Set email config"
 msgstr "Встановіть email конфугурацію"
 
-#: /home/andrey/coding/ui_example/lib/main.py:92
+#: /home/andrey/coding/ui_example/lib/main.py:109
 msgid "Enter email"
 msgstr "Введіть email"
 
-#: /home/andrey/coding/ui_example/lib/main.py:96
+#: /home/andrey/coding/ui_example/lib/main.py:113
 msgid "Tel field"
 msgstr "Поле телефону"
 
-#: /home/andrey/coding/ui_example/lib/main.py:97
+#: /home/andrey/coding/ui_example/lib/main.py:114
 msgid "Set tel config"
 msgstr "Вкажіть конфігурації телефону"
 
-#: /home/andrey/coding/ui_example/lib/main.py:100
+#: /home/andrey/coding/ui_example/lib/main.py:117
 msgid "Enter your tel"
 msgstr "Введіть ваш телефон"
 
-#: /home/andrey/coding/ui_example/lib/main.py:104
+#: /home/andrey/coding/ui_example/lib/main.py:121
 msgid "Url (website) field"
 msgstr "Посилання на веб-сайт"
 
-#: /home/andrey/coding/ui_example/lib/main.py:105
+#: /home/andrey/coding/ui_example/lib/main.py:122
 msgid "Set url config"
 msgstr "Встановіть конфігурацію посилання"
 
-#: /home/andrey/coding/ui_example/lib/main.py:108
+#: /home/andrey/coding/ui_example/lib/main.py:125
 msgid "Enter url"
 msgstr "Введіть посилання"
 
-#: /home/andrey/coding/ui_example/lib/main.py:112
+#: /home/andrey/coding/ui_example/lib/main.py:129
 msgid "Number field"
 msgstr "Введіть число"
 
-#: /home/andrey/coding/ui_example/lib/main.py:113
+#: /home/andrey/coding/ui_example/lib/main.py:130
 msgid "Set number config"
 msgstr "Опція число"
 
-#: /home/andrey/coding/ui_example/lib/main.py:116
+#: /home/andrey/coding/ui_example/lib/main.py:133
 msgid "Enter number value"
 msgstr "Введіть числову конфігурацію"
 
-#: /home/andrey/coding/ui_example/lib/main.py:120
+#: /home/andrey/coding/ui_example/lib/main.py:137
 msgid "Password"
 msgstr "Пароль"
 
-#: /home/andrey/coding/ui_example/lib/main.py:121
+#: /home/andrey/coding/ui_example/lib/main.py:138
 msgid "Set some secure value setting"
 msgstr "Встановіть захищене значення параметру"
 
-#: /home/andrey/coding/ui_example/lib/main.py:124
+#: /home/andrey/coding/ui_example/lib/main.py:141
 msgid "Set secure value"
 msgstr "Встановіть захищене значення"
 
-#: /home/andrey/coding/ui_example/lib/main.py:128
-#: /home/andrey/coding/ui_example/lib/main.py:137
+#: /home/andrey/coding/ui_example/lib/main.py:145
+#: /home/andrey/coding/ui_example/lib/main.py:154
 msgid "Selection"
 msgstr "Випадаючий список"
 
-#: /home/andrey/coding/ui_example/lib/main.py:146
+#: /home/andrey/coding/ui_example/lib/main.py:163
 msgid "Toggle something"
 msgstr "Перемикач"
 
-#: /home/andrey/coding/ui_example/lib/main.py:147
-#: /home/andrey/coding/ui_example/lib/main.py:155
+#: /home/andrey/coding/ui_example/lib/main.py:164
+#: /home/andrey/coding/ui_example/lib/main.py:172
 msgid "Select checkbox option setting"
 msgstr "Виберіть чекбокс"
 
-#: /home/andrey/coding/ui_example/lib/main.py:150
+#: /home/andrey/coding/ui_example/lib/main.py:167
 msgid "Verify something if enabled"
 msgstr "Верифікувати чи щось увімкнено"
 
-#: /home/andrey/coding/ui_example/lib/main.py:154
+#: /home/andrey/coding/ui_example/lib/main.py:171
 msgid "Multiple checkbox toggles, describing one setting"
 msgstr "Множинні чекбокс перемикачі, відповідаючих одному параметру"
 
-#: /home/andrey/coding/ui_example/lib/main.py:162
+#: /home/andrey/coding/ui_example/lib/main.py:179
 msgid "Radio toggles, describing one setting like single select"
 msgstr "Радіо перемикачі, відповідаючих одному параметру як одиночний select"
 
-#: /home/andrey/coding/ui_example/lib/main.py:163
+#: /home/andrey/coding/ui_example/lib/main.py:180
 msgid "Select radio option setting"
 msgstr "Налаштування одиночний перемикач"
 
-#: /home/andrey/coding/ui_example/lib/main.py:165
+#: /home/andrey/coding/ui_example/lib/main.py:182
 msgid "Select single toggle"
 msgstr "Одиночний перемикач"
 
-#: /home/andrey/coding/ui_example/lib/main.py:167
+#: /home/andrey/coding/ui_example/lib/main.py:184
 msgid "First radio"
 msgstr "Перший перемикач"
 
-#: /home/andrey/coding/ui_example/lib/main.py:167
+#: /home/andrey/coding/ui_example/lib/main.py:184
 msgid "Second radio"
 msgstr "Другий перемикач"
 
-#: /home/andrey/coding/ui_example/lib/main.py:167
+#: /home/andrey/coding/ui_example/lib/main.py:184
 msgid "Third radio"
 msgstr "Третій перемикач"
 
-#: /home/andrey/coding/ui_example/lib/main.py:184
+#: /home/andrey/coding/ui_example/lib/main.py:201
+#: /home/andrey/coding/ui_example/lib/main.py:272
 msgid "Test menu"
 msgstr "Тестове меню"
+
+#: /home/andrey/coding/ui_example/lib/main.py:274
+msgid "Test notification subject"
+msgstr "Тестовий заголовок повідомлення"
+
+#: /home/andrey/coding/ui_example/lib/main.py:274
+msgid "Test notification message"
+msgstr "Тестовий зміст повідомлення"
 
 #: /home/andrey/coding/ui_example/specialAppInfoFakeDummyForL10nScript.php:2
 msgid "UI Example"
@@ -264,9 +275,9 @@ msgid "File size: "
 msgstr "Розмір файлу: "
 
 #. TRANSLATORS src/views/FilePicker.vue:14
-#. TRANSLATORS src/views/FilePicker.vue:62
+#. TRANSLATORS src/views/FilePicker.vue:81
 #: /home/andrey/coding/ui_example/specialVueFakeDummyForL10nScript.js:24
-#: /home/andrey/coding/ui_example/specialVueFakeDummyForL10nScript.js:28
+#: /home/andrey/coding/ui_example/specialVueFakeDummyForL10nScript.js:34
 msgid "Select test file"
 msgstr "Обрати тестовий файл"
 
@@ -274,6 +285,21 @@ msgstr "Обрати тестовий файл"
 #: /home/andrey/coding/ui_example/specialVueFakeDummyForL10nScript.js:26
 msgid "Send test file to ExApp"
 msgstr "Відправити тестовий файл до ExApp"
+
+#. TRANSLATORS src/views/FilePicker.vue:21
+#: /home/andrey/coding/ui_example/specialVueFakeDummyForL10nScript.js:28
+msgid "Selected from File Actions Menu:"
+msgstr "Вибрані файли з контекстного меню"
+
+#. TRANSLATORS src/views/FilePicker.vue:22
+#: /home/andrey/coding/ui_example/specialVueFakeDummyForL10nScript.js:30
+msgid "File ids:"
+msgstr "Обрані файли: "
+
+#. TRANSLATORS src/views/FilePicker.vue:23
+#: /home/andrey/coding/ui_example/specialVueFakeDummyForL10nScript.js:32
+msgid "Files search info:"
+msgstr "Інформація вибраних файлів: "
 
 #: /home/andrey/coding/ui_example/src/router/index.js:30
 msgid "ExApp UI Example"

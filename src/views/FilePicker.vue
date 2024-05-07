@@ -16,6 +16,12 @@
 				<NcButton @click="sendToExApp">
 					{{ t('ui_example', 'Send test file to ExApp') }}
 				</NcButton>
+
+				<template v-if="selectedFileIds.length > 0">
+					<h3>{{ t('ui_example', 'Selected from File Actions Menu:') }}</h3>
+					<p><b>{{ t('ui_example', 'File ids:') }}</b>  {{ selectedFileIds }}</p>
+					<p><b>{{ t('ui_example', 'Files search info:') }}</b> {{ selectedFilesInfo }}</p>
+				</template>
 			</div>
 		</NcAppContent>
 	</NcContent>
@@ -24,7 +30,7 @@
 <script>
 import NcButton from '@nextcloud/vue/dist/Components/NcButton.js'
 import { getFilePickerBuilder } from '@nextcloud/dialogs'
-import { formatBytes, requestFileInfo } from '../files.js'
+import { formatBytes, requestFileInfo, searchByFileId } from '../files.js'
 
 import '@nextcloud/dialogs/style.css'
 import Navigation from '../components/Navigation.vue'
@@ -43,12 +49,25 @@ export default {
 		return {
 			selectedFile: '',
 			selectedFileInfo: {},
+			selectedFileIds: [],
+			selectedFilesInfo: [],
 		}
 	},
 	computed: {
 		formattedSize() {
 			return formatBytes(this.selectedFileInfo?.size || 0) || ''
 		},
+	},
+	beforeMount() {
+		// Load files info from fileIds query parameter if exists
+		if (this.$route.query.fileIds) {
+			this.selectedFileIds = this.$route.query.fileIds.split(',').map(Number)
+			this.selectedFileIds.forEach(fileId => {
+				searchByFileId(fileId).then(fileInfo => {
+					this.selectedFilesInfo.push(fileInfo)
+				})
+			})
+		}
 	},
 	methods: {
 		getFilesPicker(title) {

@@ -37,6 +37,53 @@ const requestFileInfo = async (path) => {
 	return response?.data?.props
 }
 
+const searchByFileId = async (fileId) => {
+	// https://docs.nextcloud.com/server/latest/developer_manual/client_apis/WebDAV/search.html#examples-search-bodies
+	const searchDavRequest = `<?xml version="1.0" encoding="UTF-8"?>
+		<d:searchrequest xmlns:d="DAV:" xmlns:oc="http://owncloud.org/ns">
+			<d:basicsearch>
+				<d:select>
+					<d:prop>
+						<d:getlastmodified />
+						<d:getetag />
+						<d:getcontenttype />
+						<d:resourcetype />
+						<oc:fileid />
+						<oc:permissions />
+						<oc:size />
+						<d:getcontentlength />
+						<oc:favorite />
+						<oc:comments-unread />
+						<oc:owner-display-name />
+						<oc:share-types />
+					</d:prop>
+				</d:select>
+				<d:from>
+					<d:scope>
+						<d:href>/files/${getCurrentUser().uid}</d:href>
+						<d:depth>infinity</d:depth>
+					</d:scope>
+				</d:from>
+				<d:where>
+					<d:eq>
+						<d:prop>
+							<oc:fileid/>
+						</d:prop>
+						<d:literal>${fileId}</d:literal>
+					</d:eq>
+				</d:where>
+				<d:orderby/>
+			</d:basicsearch>
+		</d:searchrequest>`
+
+	const davClient = davGetClient(generateRemoteUrl('dav/'))
+	const response = await davClient.search('/', {
+		data: searchDavRequest,
+		details: true,
+	})
+	return response?.data?.results[0] ?? null
+}
+
 const formatBytes = (bytes, decimals = 2) => {
 	if (bytes === 0) return '0 B'
 	const k = 1024
@@ -48,5 +95,6 @@ const formatBytes = (bytes, decimals = 2) => {
 
 export {
 	requestFileInfo,
+	searchByFileId,
 	formatBytes,
 }

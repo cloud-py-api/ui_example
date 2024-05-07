@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nextcloud 3.14159\n"
 "Report-Msgid-Bugs-To: translations\\@example.com\n"
-"POT-Creation-Date: 2024-02-20 18:10+0200\n"
+"POT-Creation-Date: 2024-05-02 19:38+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,184 +17,185 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /home/andrey/coding/ui_example/lib/main.py:55
+#: /home/andrey/coding/ui_example/lib/main.py:38
+#: /home/andrey/coding/ui_example/lib/main.py:49
+#: /home/andrey/coding/ui_example/lib/main.py:57
 msgid "UI example"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:67
+#: /home/andrey/coding/ui_example/lib/main.py:69
 msgid "Example of declarative settings"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:68
+#: /home/andrey/coding/ui_example/lib/main.py:70
 msgid "These fields are rendered dynamically from declarative schema"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:73
-#: /home/andrey/coding/ui_example/lib/main.py:144
-#: /home/andrey/coding/ui_example/lib/main.py:147
-#: /home/andrey/coding/ui_example/lib/main.py:153
-#: /home/andrey/coding/ui_example/lib/main.py:156
+#: /home/andrey/coding/ui_example/lib/main.py:75
+#: /home/andrey/coding/ui_example/lib/main.py:146
+#: /home/andrey/coding/ui_example/lib/main.py:149
+#: /home/andrey/coding/ui_example/lib/main.py:155
+#: /home/andrey/coding/ui_example/lib/main.py:158
 msgid "Select some option setting"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:76
+#: /home/andrey/coding/ui_example/lib/main.py:78
 msgid "Select some multiple options"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:81
-#: /home/andrey/coding/ui_example/lib/main.py:85
+#: /home/andrey/coding/ui_example/lib/main.py:83
+#: /home/andrey/coding/ui_example/lib/main.py:87
 msgid "Choose init status check background job interval"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:82
+#: /home/andrey/coding/ui_example/lib/main.py:84
 msgid "How often ExApp should check for initialization status"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:87
+#: /home/andrey/coding/ui_example/lib/main.py:89
 msgid "Each 40 minutes"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:88
+#: /home/andrey/coding/ui_example/lib/main.py:90
 msgid "Each 60 minutes"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:89
+#: /home/andrey/coding/ui_example/lib/main.py:91
 msgid "Each 120 minutes"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:90
+#: /home/andrey/coding/ui_example/lib/main.py:92
 msgid "Each day"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:95
+#: /home/andrey/coding/ui_example/lib/main.py:97
 msgid "Default text field"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:96
+#: /home/andrey/coding/ui_example/lib/main.py:98
 msgid "Set some simple text setting"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:99
+#: /home/andrey/coding/ui_example/lib/main.py:101
 msgid "Enter text setting"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:103
+#: /home/andrey/coding/ui_example/lib/main.py:105
 msgid "Email field"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:104
+#: /home/andrey/coding/ui_example/lib/main.py:106
 msgid "Set email config"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:107
+#: /home/andrey/coding/ui_example/lib/main.py:109
 msgid "Enter email"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:111
+#: /home/andrey/coding/ui_example/lib/main.py:113
 msgid "Tel field"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:112
+#: /home/andrey/coding/ui_example/lib/main.py:114
 msgid "Set tel config"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:115
+#: /home/andrey/coding/ui_example/lib/main.py:117
 msgid "Enter your tel"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:119
+#: /home/andrey/coding/ui_example/lib/main.py:121
 msgid "Url (website) field"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:120
+#: /home/andrey/coding/ui_example/lib/main.py:122
 msgid "Set url config"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:123
+#: /home/andrey/coding/ui_example/lib/main.py:125
 msgid "Enter url"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:127
+#: /home/andrey/coding/ui_example/lib/main.py:129
 msgid "Number field"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:128
+#: /home/andrey/coding/ui_example/lib/main.py:130
 msgid "Set number config"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:131
+#: /home/andrey/coding/ui_example/lib/main.py:133
 msgid "Enter number value"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:135
+#: /home/andrey/coding/ui_example/lib/main.py:137
 msgid "Password"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:136
+#: /home/andrey/coding/ui_example/lib/main.py:138
 msgid "Set some secure value setting"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:139
+#: /home/andrey/coding/ui_example/lib/main.py:141
 msgid "Set secure value"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:143
-#: /home/andrey/coding/ui_example/lib/main.py:152
+#: /home/andrey/coding/ui_example/lib/main.py:145
+#: /home/andrey/coding/ui_example/lib/main.py:154
 msgid "Selection"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:161
+#: /home/andrey/coding/ui_example/lib/main.py:163
 msgid "Toggle something"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:162
-#: /home/andrey/coding/ui_example/lib/main.py:170
+#: /home/andrey/coding/ui_example/lib/main.py:164
+#: /home/andrey/coding/ui_example/lib/main.py:172
 msgid "Select checkbox option setting"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:165
+#: /home/andrey/coding/ui_example/lib/main.py:167
 msgid "Verify something if enabled"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:169
+#: /home/andrey/coding/ui_example/lib/main.py:171
 msgid "Multiple checkbox toggles, describing one setting"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:177
+#: /home/andrey/coding/ui_example/lib/main.py:179
 msgid "Radio toggles, describing one setting like single select"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:178
+#: /home/andrey/coding/ui_example/lib/main.py:180
 msgid "Select radio option setting"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:180
+#: /home/andrey/coding/ui_example/lib/main.py:182
 msgid "Select single toggle"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:182
+#: /home/andrey/coding/ui_example/lib/main.py:184
 msgid "First radio"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:182
+#: /home/andrey/coding/ui_example/lib/main.py:184
 msgid "Second radio"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:182
+#: /home/andrey/coding/ui_example/lib/main.py:184
 msgid "Third radio"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:191
 #: /home/andrey/coding/ui_example/lib/main.py:201
-#: /home/andrey/coding/ui_example/lib/main.py:236
+#: /home/andrey/coding/ui_example/lib/main.py:272
 msgid "Test menu"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:238
+#: /home/andrey/coding/ui_example/lib/main.py:274
 msgid "Test notification subject"
 msgstr ""
 
-#: /home/andrey/coding/ui_example/lib/main.py:238
+#: /home/andrey/coding/ui_example/lib/main.py:274
 msgid "Test notification message"
 msgstr ""
 
@@ -269,15 +270,30 @@ msgid "File size: "
 msgstr ""
 
 #. TRANSLATORS src/views/FilePicker.vue:14
-#. TRANSLATORS src/views/FilePicker.vue:62
+#. TRANSLATORS src/views/FilePicker.vue:81
 #: /home/andrey/coding/ui_example/specialVueFakeDummyForL10nScript.js:24
-#: /home/andrey/coding/ui_example/specialVueFakeDummyForL10nScript.js:28
+#: /home/andrey/coding/ui_example/specialVueFakeDummyForL10nScript.js:34
 msgid "Select test file"
 msgstr ""
 
 #. TRANSLATORS src/views/FilePicker.vue:17
 #: /home/andrey/coding/ui_example/specialVueFakeDummyForL10nScript.js:26
 msgid "Send test file to ExApp"
+msgstr ""
+
+#. TRANSLATORS src/views/FilePicker.vue:21
+#: /home/andrey/coding/ui_example/specialVueFakeDummyForL10nScript.js:28
+msgid "Selected from File Actions Menu:"
+msgstr ""
+
+#. TRANSLATORS src/views/FilePicker.vue:22
+#: /home/andrey/coding/ui_example/specialVueFakeDummyForL10nScript.js:30
+msgid "File ids:"
+msgstr ""
+
+#. TRANSLATORS src/views/FilePicker.vue:23
+#: /home/andrey/coding/ui_example/specialVueFakeDummyForL10nScript.js:32
+msgid "Files search info:"
 msgstr ""
 
 #: /home/andrey/coding/ui_example/src/router/index.js:30
